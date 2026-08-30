@@ -1,0 +1,28 @@
+[resource]
+resource_type = "StandardMaterial3D"
+script = null
+
+[subresource type="Texture2D" id=1]
+resource_path = "res://resources/textures/blocks.png"
+
+[property]
+var/StandardMaterial3D:albedo_texture=SubResource( 1 )
+var/StandardMaterial3D:metallic=0.0
+var/StandardMaterial3D:roughness=1.0
+var/StandardMaterial3D:emission_enabled=false
+var/StandardMaterial3D:emission_energy=1.0
+var/StandardMaterial3D:emission_color=Color( 1, 1, 1, 1 )
+var/StandardMaterial3D:transparency=0.0
+var/StandardMaterial3D:refraction=0.0
+var/StandardMaterial3D:albedo_color=Color( 1, 1, 1, 1 )
+var/StandardMaterial3D:specular=0.5
+var/StandardMaterial3D:shininess=0.0
+var/StandardMaterial3D:clearcoat=0.0
+var/StandardMaterial3D:clearcoat_gloss=0.0
+var/StandardMaterial3D:anisotropy=0.0
+var/StandardMaterial3D:anisotropy_rotation=0
+var/StandardMaterial3D:anisotropy_strength=0.0
+var/StandardMaterial3D:specular_mode=0
+var/StandardMaterial3D:use_timescale=false
+var/StandardMaterial3D:transparency_mode=0
+var/StandardMaterial3D:transparency_pass=0

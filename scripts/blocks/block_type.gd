@@ -1,0 +1,7 @@
+enum BlockType:
+	AIR = 0
+	GRASS_BLOCK = 1
+	DIRT = 2
+	COBBLESTONE = 3
+	COBBLESTONE_2 = 4
+	SUPERBLOCK = 5
