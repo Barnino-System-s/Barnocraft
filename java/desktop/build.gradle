@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+sourceCompatibility = 11
+
+mainClassName = 'com.barnocraft.desktop.DesktopLauncher'
+
+dependencies {
+    implementation project(':core')
+    implementation 'com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.1'
+    implementation 'com.badlogicgames.gdx:gdx-platform:1.12.1:natives-desktop'
+    implementation 'org.lwjgl:lwjgl:3.3.3'
+    implementation 'org.lwjgl:lwjgl-assimp:3.3.3'
+    implementation 'org.lwjgl:lwjgl-glfw:3.3.3'
+    implementation 'org.lwjgl:lwjgl-openal:3.3.3'
+    implementation 'org.lwjgl:lwjgl-opengl:3.3.3'
+    implementation 'org.lwjgl:lwjgl-stb:3.3.3'
+}
+
+task run(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+}

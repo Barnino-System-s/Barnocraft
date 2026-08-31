@@ -1,0 +1,3 @@
+// LibGDX project settings
+include 'core'
+include 'desktop'

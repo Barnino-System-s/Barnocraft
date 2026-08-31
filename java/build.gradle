@@ -1,0 +1,17 @@
+// Root project build.gradle
+allprojects {
+    apply plugin: 'java'
+    
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+}
+
+task clean(type: GradleBuild) {
+    tasks.each { task ->
+        if (task.name == 'clean') {
+            dependsOn task
+        }
+    }
+}
